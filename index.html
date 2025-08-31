@@ -3,97 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lumos Frontend Solutions Portfolio Page</title>
+  <title>Lumos Frontend Solutions</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
-  <header class="container">
+  <header class="header">
     <div class="logo">Lumos Frontend Solutions</div>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="menu-btn">☰</div>
   </header>
 
-<!-- Hero -->
-  <section class="hero">
+  <!-- Hero -->
+  <section id="hero" class="hero">
     <div class="hero-content">
-      <h1>Lumos Frontend Solutions</h1>
-      <p>We craft modern, responsive landing pages that shine a light on your brand and turn visitors into clients.</p>
+      <h1>We Create Bold Ideas</h1>
+      <p>Modern, responsive landing pages that shine a light on your brand.</p>
+      <span class="scroll-down">↓</span>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="container about">
-    <h2>Bring Your Brand to Life</h2>
-    <p>
-      At Lumos Frontend Solutions, we design and build landing pages that do more than look good — they perform.  
-      Our mission is to make your brand stand out with clean design, seamless functionality, and optimized user experiences that convert.
-    </p>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="container services">
-    <div>
-      <h2>Landing Page Design</h2>
-      <p>Custom, responsive designs tailored to your business goals — built to engage and convert.</p>
+  <!-- Services (alternating two-column layout) -->
+  <section id="services" class="service yellow">
+    <div class="service-text">
+      <h2>Branding</h2>
+      <p>Shape a unique brand identity that truly stands out.</p>
+      <a href="#">Learn More</a>
     </div>
-    <div>
-      <h2>Frontend Development</h2>
-      <p>Clean, modern, and scalable code solutions that make your website fast, reliable, and future-ready.</p>
-    </div>
-    <div>
-      <h2>Ongoing Support</h2>
-      <p>From updates to optimizations, we provide continuous support to keep your site shining bright.</p>
+    <div class="service-image">
+      <img src="images/branding.jpg" alt="Branding visuals">
     </div>
   </section>
 
-<!-- Projects -->
-<section id="projects" class="container projects">
-  <h2>Our Projects</h2>
-  <div class="projects-grid">
-    <div class="card">
-      <h3>Navapar Restaurant Landing Page</h3>
-      <p>A sleek, responsive landing page designed for showcasing a restaurant's menu, ambiance, and contact details.</p>
-      <a href="https://github.com/KAJ-aka-KAJ/Navapar-Restaurant-Landing-Page-" target="_blank" rel="noopener">View Project</a>
+  <section class="service coral">
+    <div class="service-image">
+      <img src="images/design.jpg" alt="Design visuals">
     </div>
-    <div class="card">
-      <h3>Smart Estate Landing Page</h3>
-      <p>A clean, modern landing page built for real estate listings — designed to highlight property features with minimal load time.</p>
-      <a href="https://github.com/KAJ-aka-KAJ/Smart-Estate-" target="_blank" rel="noopener">View Project</a>
+    <div class="service-text">
+      <h2>Design</h2>
+      <p>Minimal, colorful layouts that engage your audience instantly.</p>
+      <a href="#">Learn More</a>
     </div>
-    <div class="card">
-      <h3>Lumina Glow Skincare Landing Page</h3>
-      <p>An elegant landing page crafted for a skincare brand — emphasizes product visuals, clean layout, and brand trust.</p>
-      <a href="https://github.com/KAJ-aka-KAJ/Lumina-Glow-Skincare-" target="_blank" rel="noopener">View Project</a>
+  </section>
+
+  <section class="service mint">
+    <div class="service-text">
+      <h2>Photography</h2>
+      <p>High-quality visuals that boost credibility and trust.</p>
+      <a href="#">Learn More</a>
     </div>
-  </div>
-</section>
+    <div class="service-image">
+      <img src="images/photography.jpg" alt="Photography samples">
+    </div>
+  </section>
 
   <!-- Testimonials -->
-  <section class="testimonials container">
-    <h2>Client Testimonials</h2>
-    <div class="cards">
-      <div class="card">Emily R. — Marketing Director</div>
-      <div class="card">Thomas S. — COO</div>
-      <div class="card">Jennie F. — Business Owner</div>
+  <section id="testimonials" class="testimonials">
+    <h2>CLIENT TESTIMONIALS</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <img src="images/client1.jpg" alt="Emily R">
+        <h3>Emily R.</h3>
+        <p class="role">Marketing Director</p>
+        <blockquote>“We put our trust in Lumos and they delivered, meeting every deadline with excellence.”</blockquote>
+      </div>
+      <div class="testimonial">
+        <img src="images/client2.jpg" alt="Thomas S">
+        <h3>Thomas S.</h3>
+        <p class="role">Chief Operating Officer</p>
+        <blockquote>“Their enthusiasm and creativity made working together an enjoyable experience.”</blockquote>
+      </div>
+      <div class="testimonial">
+        <img src="images/client3.jpg" alt="Jennie F">
+        <h3>Jennie F.</h3>
+        <p class="role">Business Owner</p>
+        <blockquote>“Incredible results! Our sales increased over 400% after collaborating with Lumos.”</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="gallery">
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpg" alt="Gallery image 1">
+      <img src="images/gallery2.jpg" alt="Gallery image 2">
+      <img src="images/gallery3.jpg" alt="Gallery image 3">
+      <img src="images/gallery4.jpg" alt="Gallery image 4">
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="contact">
+  <footer id="contact" class="footer">
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="socials">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
     <p>&copy; 2025 Lumos Frontend Solutions. All rights reserved.</p>
-    <ul>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Facebook</a></li>
-    </ul>
   </footer>
 
   <script src="script.js"></script>
