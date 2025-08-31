@@ -1,0 +1,180 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* 1rem = 16px */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: hsl(212, 27%, 19%);
+}
+
+/* Global Containers */
+.container {
+  max-width: 80rem; /* ~1280px */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  font-weight: 600;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: hsl(51, 100%, 49%);
+  color: #fff;
+  padding: 5vh 2rem;
+}
+
+.hero h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Services */
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+/* Projects */
+.projects {
+  padding: 5rem 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.testimonials .cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.testimonials .card {
+  flex: 1 1 20rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: hsl(167, 34%, 41%);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: #fff;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  nav.open ul {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
