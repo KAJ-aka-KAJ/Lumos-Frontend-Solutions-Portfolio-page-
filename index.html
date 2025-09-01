@@ -3,116 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lumos Frontend Solutions</title>
-  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">Lumos Frontend Solutions</div>
-    <nav>
-      <ul>
+  <!-- ===== HEADER / NAV ===== -->
+  <header>
+    <nav id="navbar">
+      <div class="logo">MyPortfolio</div>
+      <button id="menu-toggle" class="menu-btn">☰</button>
+      <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="menu-btn">☰</div>
   </header>
 
-  <!-- Hero -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>We Create Bold Ideas</h1>
-      <p>Modern, responsive landing pages that shine a light on your brand.</p>
-      <span class="scroll-down">↓</span>
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="container hero">
+    <div class="hero-text">
+      <h1>Hello, I’m Kehinde</h1>
+      <p>A passionate web developer exploring design, frontend, and Web3.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Profile Picture">
     </div>
   </section>
 
-  <!-- Services (alternating two-column layout) -->
-  <section id="services" class="service yellow">
-    <div class="service-text">
-      <h2>Branding</h2>
-      <p>Shape a unique brand identity that truly stands out.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="service-image">
-      <img src="images/branding.jpg" alt="Branding visuals">
-    </div>
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="container about">
+    <h2>About Me</h2>
+    <p>
+      I’m a web developer with a background in nursing, blending problem-solving,
+      empathy, and design to build meaningful digital experiences.
+    </p>
   </section>
 
-  <section class="service coral">
-    <div class="service-image">
-      <img src="images/design.jpg" alt="Design visuals">
-    </div>
-    <div class="service-text">
-      <h2>Design</h2>
-      <p>Minimal, colorful layouts that engage your audience instantly.</p>
-      <a href="#">Learn More</a>
-    </div>
-  </section>
-
-  <section class="service mint">
-    <div class="service-text">
-      <h2>Photography</h2>
-      <p>High-quality visuals that boost credibility and trust.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="service-image">
-      <img src="images/photography.jpg" alt="Photography samples">
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="testimonials">
-    <h2>CLIENT TESTIMONIALS</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        <img src="images/client1.jpg" alt="Emily R">
-        <h3>Emily R.</h3>
-        <p class="role">Marketing Director</p>
-        <blockquote>“We put our trust in Lumos and they delivered, meeting every deadline with excellence.”</blockquote>
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="container projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>SmartEstate Landing Page</h3>
+        <p>A real estate platform landing page built with HTML, CSS, and JS.</p>
+        <a href="#" class="btn">View Project</a>
       </div>
-      <div class="testimonial">
-        <img src="images/client2.jpg" alt="Thomas S">
-        <h3>Thomas S.</h3>
-        <p class="role">Chief Operating Officer</p>
-        <blockquote>“Their enthusiasm and creativity made working together an enjoyable experience.”</blockquote>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio showcasing my skills and projects.</p>
+        <a href="#" class="btn">View Project</a>
       </div>
-      <div class="testimonial">
-        <img src="images/client3.jpg" alt="Jennie F">
-        <h3>Jennie F.</h3>
-        <p class="role">Business Owner</p>
-        <blockquote>“Incredible results! Our sales increased over 400% after collaborating with Lumos.”</blockquote>
+      <div class="card">
+        <h3>Budget Tracker</h3>
+        <p>A simple budget tracker app built with vanilla JavaScript.</p>
+        <a href="#" class="btn">View Project</a>
       </div>
     </div>
   </section>
 
-  <!-- Image Gallery -->
-  <section class="gallery">
-    <div class="gallery-grid">
-      <img src="images/gallery1.jpg" alt="Gallery image 1">
-      <img src="images/gallery2.jpg" alt="Gallery image 2">
-      <img src="images/gallery3.jpg" alt="Gallery image 3">
-      <img src="images/gallery4.jpg" alt="Gallery image 4">
-    </div>
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+  <section id="certifications" class="container certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Responsive Web Design – FreeCodeCamp</li>
+      <li>Blockchain Basics – Updraft</li>
+      <!-- Add more as you earn -->
+    </ul>
   </section>
 
-  <!-- Footer -->
-  <footer id="contact" class="footer">
-    <nav>
-      <a href="#hero">Home</a>
-      <a href="#services">Services</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="socials">
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <p>&copy; 2025 Lumos Frontend Solutions. All rights reserved.</p>
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="container contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Kehinde Ayodapo John. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
